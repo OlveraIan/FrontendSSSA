@@ -68,7 +68,7 @@ function AutoMain() {
                     tarjetaVehiculo.innerHTML = 
                     `
                         <p class="puertas">${coche.puertas} pasajeros</p>
-                        <img src="/src/assets/${coche.imagen}">
+                        <img src="src/assets/${coche.imagen}">
                         <p class="nombre">${coche.nombre}</p>
                         <p class="precio">$${coche.precio}</p>
                     `;  
@@ -99,7 +99,7 @@ function AutoMain() {
                     tarjetaVehiculo.innerHTML = 
                     `
                         <p class="puertas">${coche.puertas} pasajeros</p>
-                        <img src="/src/assets/${coche.imagen}">
+                        <img src="src/assets/${coche.imagen}">
                         <p class="nombre">${coche.nombre}</p>
                         <p class="precio">$${coche.precio}</p>
                     `;  
@@ -130,7 +130,7 @@ function AutoMain() {
                     tarjetaVehiculo.innerHTML = 
                     `
                         <p class="puertas">${coche.puertas} pasajeros</p>
-                        <img src="/src/assets/${coche.imagen}">
+                        <img src="src/assets/${coche.imagen}">
                         <p class="nombre">${coche.nombre}</p>
                         <p class="precio">$${coche.precio}</p>
                     `;  
@@ -161,7 +161,7 @@ function AutoMain() {
                     tarjetaVehiculo.innerHTML = 
                     `
                         <p class="puertas">${coche.puertas} pasajeros</p>
-                        <img src="/src/assets/${coche.imagen}">
+                        <img src="src/assets/${coche.imagen}">
                         <p class="nombre">${coche.nombre}</p>
                         <p class="precio">$${coche.precio}</p>
                     `;  
@@ -187,9 +187,9 @@ function AutoMain() {
     const cambiarEstadoOrdenar = async (evento)=>{
         const imagen = document.getElementById('imagenSwitch')
         if (estadoBoton == 1) {
-            imagen.src = '/src/assets/arrowDown.png'
+            imagen.src = 'src/assets/arrowDown.png'
         }else{
-            imagen.src = '/src/assets/arrowUp.png'
+            imagen.src = 'src/assets/arrowUp.png'
         }
         estadoBoton= estadoBoton * -1
         
