@@ -39,7 +39,7 @@ function AutoMain() {
                 tarjetaVehiculo.innerHTML = 
                 `
                     <p class="puertas">${coche.puertas} pasajeros</p>
-                    <img src="src/assets/${coche.imagen}">
+                    <img src="${coche.imagen}">
                     <p class="nombre">${coche.nombre}</p>
                     <p class="precio">$${coche.precio}</p>
                 `;
@@ -68,7 +68,7 @@ function AutoMain() {
                     tarjetaVehiculo.innerHTML = 
                     `
                         <p class="puertas">${coche.puertas} pasajeros</p>
-                        <img src="src/assets/${coche.imagen}">
+                        <img src="${coche.imagen}">
                         <p class="nombre">${coche.nombre}</p>
                         <p class="precio">$${coche.precio}</p>
                     `;  
@@ -99,7 +99,7 @@ function AutoMain() {
                     tarjetaVehiculo.innerHTML = 
                     `
                         <p class="puertas">${coche.puertas} pasajeros</p>
-                        <img src="src/assets/${coche.imagen}">
+                        <img src="${coche.imagen}">
                         <p class="nombre">${coche.nombre}</p>
                         <p class="precio">$${coche.precio}</p>
                     `;  
@@ -130,7 +130,7 @@ function AutoMain() {
                     tarjetaVehiculo.innerHTML = 
                     `
                         <p class="puertas">${coche.puertas} pasajeros</p>
-                        <img src="src/assets/${coche.imagen}">
+                        <img src="${coche.imagen}">
                         <p class="nombre">${coche.nombre}</p>
                         <p class="precio">$${coche.precio}</p>
                     `;  
@@ -161,7 +161,7 @@ function AutoMain() {
                     tarjetaVehiculo.innerHTML = 
                     `
                         <p class="puertas">${coche.puertas} pasajeros</p>
-                        <img src="src/assets/${coche.imagen}">
+                        <img src="${coche.imagen}">
                         <p class="nombre">${coche.nombre}</p>
                         <p class="precio">$${coche.precio}</p>
                     `;  
@@ -187,9 +187,9 @@ function AutoMain() {
     const cambiarEstadoOrdenar = async (evento)=>{
         const imagen = document.getElementById('imagenSwitch')
         if (estadoBoton == 1) {
-            imagen.src = 'src/assets/arrowDown.png'
+            imagen.src = 'arrowDown.png'
         }else{
-            imagen.src = 'src/assets/arrowUp.png'
+            imagen.src = 'arrowUp.png'
         }
         estadoBoton= estadoBoton * -1
         
@@ -230,12 +230,12 @@ function AutoMain() {
     <>
         <div>
             <div className="top" ></div>
-            <h1 onLoad={cargarCoches}><img id='bann' src="src/banner.png" alt="Southernsanandreassuperautos.com" className='banner' draggable = 'false' tabIndex={0} onClick={cargarCoches} onKeyUp={presionarEnter}/></h1>
+            <h1 onLoad={cargarCoches}><img id='bann' src="banner.png" alt="Southernsanandreassuperautos.com" className='banner' draggable = 'false' tabIndex={0} onClick={cargarCoches} onKeyUp={presionarEnter}/></h1>
             <div className='barraMenu'>
                 <button type="button" onClick={cambiarEstadoOrdenar} className='botonOrdenar' id='ordenarPor' tabIndex={0}>
                     <div className='botonAscDes'>
                         <span className='textoBoton'>Ordenar por Precio</span>
-                        <img src='src/assets/arrowUp.png' id='imagenSwitch'></img>
+                        <img src='arrowUp.png' id='imagenSwitch'></img>
                     </div>
                 </button>
                 <button type="button" onClick={solo2Pasajeros} className='botonesBarra' id='2pasajeros' tabIndex={0}>2 pasajeros</button>
