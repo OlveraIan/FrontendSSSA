@@ -24,7 +24,7 @@ function AutoMain() {
     const cargarCoches = async (evento)=>{
         eleccionActual=0
         console.log('cargar coche inicio')
-        document.getElementById('vehiculos').innerHTML = ''
+        document.getElementById('vehiculos').innerHTML = '' 
         try {
             //console.log("datos en response ",data);
             var i = 1;
